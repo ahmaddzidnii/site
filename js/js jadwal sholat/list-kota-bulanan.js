@@ -10,7 +10,7 @@ const getKota = () => {
         data.forEach(x => {
             CardKota += ` <div class="col-md-12">
             <ul class="list-group list-unstyled">
-              <li class=" bg-light border border-1 border-black p-3 rounded-2 mb-2 hover query-search" onclick="location.href='jadwal-sholat.html?idkota=${x.id}'"><a class="text-decoration-none text-black  text-center "> ${x.lokasi}</a></li>
+              <li class=" bg-light border border-1 border-black p-3 rounded-2 mb-2 hover query-search" onclick="location.href='jadwal-sholat-per-bulan.html?idkota=${x.id}'"><a class="text-decoration-none text-black  text-center "> ${x.lokasi}</a></li>
             </ul>
           </div>`
         });

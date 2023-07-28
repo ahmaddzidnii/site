@@ -136,7 +136,7 @@ footer {
         background-color: #e0f2fe;
     }
     .sky-blue-200 {
-        background-color: #bae6fd;
+        background-color: #bae6fd !important; 
     }
     .sky-blue-300 {
         background-color: #7dd3fc;
@@ -168,6 +168,9 @@ footer {
 
     .text-sky-50 {
         color: #eff6ff;
+    }
+    .text-sky-600 {
+      color : #0284c7;
     }
 
 

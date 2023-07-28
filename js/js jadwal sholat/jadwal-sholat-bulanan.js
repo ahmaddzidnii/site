@@ -46,9 +46,11 @@ const getJadwalShalatBulanan= () => {
     tampilocation.innerHTML = location
     })
 
+    showLoad()
     fetch(`https://api.myquran.com/v1/sholat/jadwal/${valueParameter}/${fullDateBulanan}`)
     .then(data => data.json())
     .then(data => {
+      hideLoad();
         let x = data.data.jadwal
         // console.log(x)  
         let content = '';

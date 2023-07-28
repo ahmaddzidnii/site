@@ -54,18 +54,56 @@
         <div class="row">
             
 
-            <!-- Sidebar -->
-            <div class="col-md-3 sky-blue-200 text-black d-none d-md-block  mb-0" id="sidebar">
-                <h2 class="mb-4 mt-4  text-bottom-shadow text-center fw-bold">DAFTAR ISI</h2>
-                <ul class="list-group list-unstyled">
-                  <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='index.html'"><a
-                    class="text-black text-decoration-none ">Beranda</a></li>
-                  <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-surah.html'"><a class="text-black text-decoration-none ">Al-quran Online</a></li>  
-                  <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-kota.html'"><a class="text-black text-decoration-none">Jadwal Sholat</a></li>  
-                  <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item  link-active" onclick="location.href='list-doa-harian.html'"><a class="text-black text-decoration-none">Doa Sehari Hari</a></li>  
-                  <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-asmaul-husna.html'"><a class="text-black text-decoration-none">Asmaul Husna</a></li>  
-                </ul>
+     <!-- Sidebar -->
+     <div class="col-md-3 sky-blue-200 text-black d-none d-md-block  mb-0" id="sidebar">
+      <h2 class="mb-4 mt-4  text-bottom-shadow text-center fw-bold">DAFTAR ISI</h2>
+      <ul class="list-group list-unstyled">
+        <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item " onclick="location.href='index.html'"><a
+          class="text-black text-decoration-none">Beranda</a></li>
+          <li>
+            <div class="accordion mb-2 border border-black rounded-2 " id="accordionExample">
+              <div class="accordion-item sky-blue-200">
+                <h2 class="accordion-header  ">
+                  <button class="accordion-button collapsed sky-blue-200 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Alquran Online
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   <ul class="list-group list-unstyled">
+                    <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-surah.html'"><a class="text-black text-decoration-none ">Surat</a></li>
+                    <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-surah-tafsir.html'"><a class="text-black text-decoration-none ">Tafsir</a></li>
+                   </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </li>
+          <li>
+            <div class="accordion mb-2 border border-black rounded-2 " id="accordionExample2">
+              <div class="accordion-item sky-blue-200">
+                <h2 class="accordion-header  ">
+                  <button class="accordion-button collapsed sky-blue-200 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                    Jadwal Sholat
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   <ul class="list-group list-unstyled">
+                    <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-kota.html'"><a class="text-black text-decoration-none">Hari ini</a></li> 
+                    <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-kota-bulanan.html'"><a class="text-black text-decoration-none">Bulan ini</a></li> 
+                   </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        <!-- <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item" onclick="location.href='list-surah.html'"><a class="text-black text-decoration-none ">Al-quran Online</a></li>   -->
+
+        <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item link-active" onclick="location.href='list-doa-harian.html'"><a class="text-black text-decoration-none">Doa Sehari Hari</a></li>  
+        <li class="border border-1 border-black rounded-1 p-3 mb-2 shadow-list sidebar-item " onclick="location.href='list-asmaul-husna.html'"><a class="text-black text-decoration-none">Asmaul Husna</a></li> 
+      </ul>
+    </div>
 
             <!-- Konten Utama -->
             <div class="col-md-9">
@@ -160,9 +198,7 @@
       </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
+  
    <!-- js bootstrap -->
    <script src="style/bootstrap v5.3.0/js/bootstrap.bundle.min.js"></script>
    <!-- js bootstrap -->

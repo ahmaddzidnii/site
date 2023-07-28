@@ -31,9 +31,11 @@ const fullDate = `${Year}/${monthFix()}/${dayFix()}`;
 const fullDateBulanan = `${Year}/${monthFix()}`;
 
 const getJadwalShalat = () => {
+  showLoad();
     fetch(`https://api.myquran.com/v1/sholat/jadwal/${valueParameter}/${fullDate}`)
     .then(data => data.json())
     .then(data => {
+      hideLoad();
         const contentRow = `
         <div class="col-md-12 mb-3 ">
           <div class="card text-center border-black">

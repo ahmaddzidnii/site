@@ -11,7 +11,7 @@ const getSurah = () => {
         result.forEach(s => {
             listSurah += ` <div class="col-md-12">
             <ul class="list-group list-unstyled">
-              <li class=" bg-light border border-1 border-black p-3 rounded-2 mb-2 hover query-search" onclick="location.href='alquran.html?idsurah=${s.nomor}'"><a class="text-decoration-none text-black  text-center">${s.namaLatin} <span class="ms-1">|</span> </a>  <span class=" ms-1">${s.arti}</span><span class="ms-1">|</span> </a>  <span class="fs-4 ms-1">${s.nama}</span></li>
+              <li class=" bg-light border border-1 border-black p-3 rounded-2 mb-2 hover query-search" onclick="location.href='tafsir-alquran.html?idsurah=${s.nomor}'"><a class="text-decoration-none text-black  text-center">${s.namaLatin} <span class="ms-1">|</span> </a>  <span class=" ms-1">${s.arti}</span><span class="ms-1">|</span> </a>  <span class="fs-4 ms-1">${s.nama}</span></li>
             </ul>
           </div>`
         });
