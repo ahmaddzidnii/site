@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2edff;
+
+}
+
+.login {
+    width: 450px;
+    height: min-content;
+    padding: 40px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background: #ffffff;
+}
+
+.login h1 {
+    font-size: 28px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.tombol {
+    width: 100%;
+}
+
+.seluruh {
+    padding-top: 5rem;
+}

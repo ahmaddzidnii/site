@@ -1,0 +1,27 @@
+.jumbotron {
+    padding-top: 10rem;
+    background-color: #e2edff;
+}
+
+/* css id                                                        */
+#hobby {
+    background-color: #e2edff;
+}
+
+#kontakkami {
+    background-color: #e2edff;
+}
+
+/* css emot posisi */
+.emote {
+    padding-left: 4px;
+}
+
+.emoteawal {
+    padding-right: 6px;
+}
+
+/* pading navbar biar ga ngumpet */
+section {
+    padding-top: 5rem;
+}

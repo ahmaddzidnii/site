@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>PROJEK LAMPU MADZ BIASALAH</title>
+    <link rel="stylesheet" href="style.css" <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="Container-body">
+    <img src="assets/images/off.png" alt="" id="lampu1" width="400" height="400" />
+
+    <h1 class="text">ANGGAP AJA INI LAMPU RUMAH MU WKWKWK</h1>
+    <button class="btn btn-primary" onclick="saklar('on')">NYALAKAN LAMPU</button>
+    <button class="btn btn-primary" onclick="saklar('off')">MATIKAN LAMPU</button>
+
+    <!-- JAVA SCRIPT LAMPU -->
+    <script>
+        function saklar(params) {
+            console.log(params);
+
+            let lampu1 = document.getElementById("lampu1");
+
+            if (params == "on") {
+                lampu1.src = "assets/images/on.png"
+
+            }
+            if (params == "off") {
+                lampu1.src = "assets/images/off.png"
+
+            }
+        }
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- SCRIPT SELESAI DEKK -->
+</body>
+
+</html>

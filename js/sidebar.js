@@ -48,23 +48,23 @@ window.addEventListener('keydown', e => {
 window.addEventListener('keydown', e => {
     // ALT + A
       if (e.key.toLowerCase() === 'a' && e.altKey){
-        window.location="list-surah.html"
+        window.location.href="list-surah.html"
       }
       // ALT + B
       else if (e.key.toLowerCase() === 'b' && e.altKey){
-        window.location="list-kota.html"
+        window.location.href="list-kota.html"
       } 
       // ALT + C
       else if (e.key.toLowerCase() === 'c' && e.altKey){
-        window.location="list-doa-harian.html"
+        window.location.href="list-doa-harian.html"
       }
       // ALT + D
       else if (e.key.toLowerCase() === 'd' && e.altKey){
-        window.location="list-asmaul-husna.html"
+        window.location.href="list-asmaul-husna.html"
       }
         //  ALT + H 
         else if (e.key.toLowerCase() === 'h' && e.altKey){
-            window.location="index.html"
+            window.location.href="index.html"
         }
     })
 
